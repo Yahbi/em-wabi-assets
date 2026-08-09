@@ -614,6 +614,7 @@
       {% if form.errors %}<p class="fnote" style="color:#9a3b2f">Something went wrong — please email atelier@atelierearthmade.com.</p>{% endif %}
       <input type="hidden" name="contact[Request]" value="Commission enquiry (form)">
       <div><label class="fl" for="cn">Your name</label><input class="fi" id="cn" name="contact[name]" type="text" autocomplete="name" required></div>
+      <div><label class="fl" for="ce">Your email</label><input class="fi" id="ce" name="contact[email]" type="email" autocomplete="email" required></div>
       <div><label class="fl" for="cp">The piece you have in mind</label><input class="fi" id="cp" name="contact[Piece]" type="text" placeholder="e.g. Candela, or describe a material"></div>
       <div><label class="fl" for="cb">One sentence about your project</label><textarea class="ft" id="cb" name="contact[body]" required></textarea></div>
       <button class="fsub" type="submit">Send enquiry</button>
