@@ -1,0 +1,660 @@
+{% layout 'atelier' %}
+<nav class="nav at-top" id="nav">
+  <div class="nav-inner">
+    <a href="#" class="nav-logo"><em>Atelier</em> Earthmade</a>
+    <ul class="nav-links">
+      <li><a href="#collection">Collection</a></li>
+      <li><a href="#material">Materials</a></li>
+      <li><a href="#timeline">Process</a></li>
+      <li><a href="#trade">Trade</a></li>
+      <li><a href="#commission" class="nav-cta">Commission</a></li>
+    </ul>
+  </div>
+</nav>
+
+<section class="hero">
+  <video class="hero-media" autoplay muted loop playsinline preload="auto" poster="https://cdn.shopify.com/s/files/1/0798/8602/4945/files/em-b38b613253c19b39.jpg"><source src="https://cdn.shopify.com/s/files/1/0798/8602/4945/files/em-1aaa3ebde01f1ca9.mp4" type="video/mp4"></video>
+  <div class="hero-scrim"></div>
+  <div class="hero-c">
+    <p class="hero-eyebrow">Thirty-seven vessels · made to order · one block of stone each</p>
+    <h1 class="hero-h1">Stone that has not forgotten it was a mountain.</h1>
+    <div class="hero-row">
+      <a href="#collection" class="hero-cta">Enter the collection</a>
+      <button class="hero-cta ghost" onclick="openConsult()">Speak with an advisor</button>
+      <span class="hero-meta">Made to order · shipped worldwide, insured</span>
+    </div>
+  </div>
+  <div class="hero-scroll"><span>Scroll</span><i></i></div>
+</section>
+
+<section class="intro">
+  <div class="intro-inner">
+    <p class="intro-k rv">01 — The philosophy</p>
+    <h2 class="intro-h rv d1">A bath drawn from a single block of stone is not a fixture. It is the <em>quietest</em> object in the house, and the one most likely to outlast it. Each Earthmade vessel is carved from one block — <em>nothing cast, nothing assembled, nothing repeated</em> — and finished until the stone decides where the water gathers.</h2>
+  </div>
+  <div class="intro-foot">
+    <p>Fourteen stone families</p>
+    <p>One block each · no two alike</p>
+    <p>Shipped worldwide · insured, door to door</p>
+  </div>
+</section>
+
+<section class="lead" id="lookbook">
+  <div class="lead-in">
+    <div class="lead-txt">
+      <p class="lead-k rv">Before you decide</p>
+      <h2 class="lead-h rv d1">The Atelier Lookbook &amp; Stone Guide.</h2>
+      <p class="lead-p rv d2">A quiet, printable dossier — the full collection at scale, the fourteen stones up close, every dimension and weight, and how a commission unfolds from first message to your threshold. We send it by email, then leave you to it. No sequence, no pressure.</p>
+    </div>
+    <div class="lead-cta rv d2">
+      <button class="lead-b" onclick="openLookbook()">Request the lookbook →</button>
+      <p class="lead-note">One email, sent by a person.<br>Choosing a stone begins here.</p>
+    </div>
+  </div>
+</section>
+
+<div class="collhd" id="collection">
+  <div class="collhd-inner">
+    <div>
+      <p class="collhd-k">02 — The collection</p>
+      <h2 class="collhd-h">Organised by form.</h2>
+    </div>
+    <p class="collhd-note">Thirty-seven vessels · four forms · each carved from a single block, and rendered its own way.</p>
+  </div>
+</div>
+
+<section class="feat feat-right" id="p-candela">
+  <div class="feat-bg" data-para="70"><video class="feat-media" autoplay muted loop playsinline preload="auto" poster="https://cdn.shopify.com/s/files/1/0798/8602/4945/files/em-8b8e81ecfe2a1cf0.jpg"><source src="https://cdn.shopify.com/s/files/1/0798/8602/4945/files/em-464704e0d38e07db.mp4" type="video/mp4"></video><div class="feat-scrim"></div></div>
+  <div class="feat-inner">
+    <div class="feat-overlay">
+      <p class="feat-num">II / XIV</p>
+      <p class="feat-fam">Honey Onyx</p>
+      <h2 class="feat-name">Candela</h2>
+      <p class="feat-line">The one stone that keeps a light of its own.</p>
+      <div class="feat-meta"><span>1850 × 900 × 580 mm</span><span class="dot">·</span><span>55 mm wall</span><span class="dot">·</span><span>from&nbsp;<b>$52,900</b></span></div>
+      <button class="feat-cta" onclick="openOrder('Candela')">Order this piece</button>
+    </div>
+  </div>
+</section>
+
+<section class="pshape" id="shape-oval">
+  <div class="pshape-hd">
+    <div><p class="pshape-k">Oval · 29 vessels</p><h2 class="pshape-h">The signature form — a single level rim, carved unbroken.</h2></div>
+  </div>
+  <div class="pgrid"><div class="pcard rv">
+      <div class="pcard-img" style="background-image:url(https://cdn.shopify.com/s/files/1/0798/8602/4945/files/em-da486364e87972c0.jpg)"></div>
+      <div class="pcard-body">
+        <h3 class="pcard-name">Candela</h3>
+        <p class="pcard-mat">Honey Onyx</p>
+        <p class="pcard-meta">1850 × 900 × 580 mm &nbsp;·&nbsp; ≈ 850 kg</p>
+        <p class="pcard-priceline"><span class="pcard-price">$52,900</span><span class="pcard-ddp"> · duty-paid</span></p>
+        <button class="pcard-buy" onclick="openOrder('Candela')">Order this piece →</button>
+      </div>
+    </div><div class="pcard rv">
+      <div class="pcard-img" style="background-image:url(https://cdn.shopify.com/s/files/1/0798/8602/4945/files/em-7ac521151a636b06.jpg)"></div>
+      <div class="pcard-body">
+        <h3 class="pcard-name">Carrara</h3>
+        <p class="pcard-mat">Bianco Carrara Venato</p>
+        <p class="pcard-meta">1800 × 850 × 600 mm &nbsp;·&nbsp; ≈ 750 kg</p>
+        <p class="pcard-priceline"><span class="pcard-price">$38,000</span><span class="pcard-ddp"> · duty-paid</span></p>
+        <button class="pcard-buy" onclick="openOrder('Carrara')">Order this piece →</button>
+      </div>
+    </div><div class="pcard rv">
+      <div class="pcard-img" style="background-image:url(https://cdn.shopify.com/s/files/1/0798/8602/4945/files/em-2cff519e906b3191.jpg)"></div>
+      <div class="pcard-body">
+        <h3 class="pcard-name">Arabesca</h3>
+        <p class="pcard-mat">Arabescato White Marble</p>
+        <p class="pcard-meta">5 sizes &nbsp;·&nbsp; ≈ 750 kg</p>
+        <p class="pcard-priceline"><span class="pcard-price">from $30,500</span><span class="pcard-ddp"> · duty-paid</span></p>
+        <button class="pcard-buy" onclick="openOrder('Arabesca')">Order this piece →</button>
+      </div>
+    </div><div class="pcard rv">
+      <div class="pcard-img" style="background-image:url(https://cdn.shopify.com/s/files/1/0798/8602/4945/files/em-bf4aa764c812baeb.jpg)"></div>
+      <div class="pcard-body">
+        <h3 class="pcard-name">Bianco</h3>
+        <p class="pcard-mat">White Marble</p>
+        <p class="pcard-meta">1750 × 800 × 550 mm &nbsp;·&nbsp; ≈ 800 kg</p>
+        <p class="pcard-priceline"><span class="pcard-price">$27,000</span><span class="pcard-ddp"> · duty-paid</span></p>
+        <button class="pcard-buy" onclick="openOrder('Bianco')">Order this piece →</button>
+      </div>
+    </div><div class="pcard rv">
+      <div class="pcard-img" style="background-image:url(https://cdn.shopify.com/s/files/1/0798/8602/4945/files/em-ab525b7b9195b331.jpg)"></div>
+      <div class="pcard-body">
+        <h3 class="pcard-name">Selene</h3>
+        <p class="pcard-mat">Volakas White Marble</p>
+        <p class="pcard-meta">3 sizes &nbsp;·&nbsp; ≈ 700 kg</p>
+        <p class="pcard-priceline"><span class="pcard-price">from $26,500</span><span class="pcard-ddp"> · duty-paid</span></p>
+        <button class="pcard-buy" onclick="openOrder('Selene')">Order this piece →</button>
+      </div>
+    </div><div class="pcard rv">
+      <div class="pcard-img" style="background-image:url(https://cdn.shopify.com/s/files/1/0798/8602/4945/files/em-2aa00d2633ac6a3d.jpg)"></div>
+      <div class="pcard-body">
+        <h3 class="pcard-name">Tivoli</h3>
+        <p class="pcard-mat">Beige Travertine</p>
+        <p class="pcard-meta">3 sizes &nbsp;·&nbsp; ≈ 620 kg</p>
+        <p class="pcard-priceline"><span class="pcard-price">from $30,000</span><span class="pcard-ddp"> · duty-paid</span></p>
+        <button class="pcard-buy" onclick="openOrder('Tivoli')">Order this piece →</button>
+      </div>
+    </div><div class="pcard rv">
+      <div class="pcard-img" style="background-image:url(https://cdn.shopify.com/s/files/1/0798/8602/4945/files/em-2aa00d2633ac6a3d.jpg)"></div>
+      <div class="pcard-body">
+        <h3 class="pcard-name">Siena</h3>
+        <p class="pcard-mat">Beige-White Travertine</p>
+        <p class="pcard-meta">2 sizes &nbsp;·&nbsp; ≈ 690 kg</p>
+        <p class="pcard-priceline"><span class="pcard-price">from $29,500</span><span class="pcard-ddp"> · duty-paid</span></p>
+        <button class="pcard-buy" onclick="openOrder('Siena')">Order this piece →</button>
+      </div>
+    </div><div class="pcard rv">
+      <div class="pcard-img" style="background-image:url(https://cdn.shopify.com/s/files/1/0798/8602/4945/files/em-51a801b34b7c82d1.jpg)"></div>
+      <div class="pcard-body">
+        <h3 class="pcard-name">Argento</h3>
+        <p class="pcard-mat">Silver-Grey Travertine</p>
+        <p class="pcard-meta">2 sizes &nbsp;·&nbsp; ≈ 650 kg</p>
+        <p class="pcard-priceline"><span class="pcard-price">from $28,000</span><span class="pcard-ddp"> · duty-paid</span></p>
+        <button class="pcard-buy" onclick="openOrder('Argento')">Order this piece →</button>
+      </div>
+    </div><div class="pcard rv">
+      <div class="pcard-img" style="background-image:url(https://cdn.shopify.com/s/files/1/0798/8602/4945/files/em-d6f6da2ac19ad4e1.jpg)"></div>
+      <div class="pcard-body">
+        <h3 class="pcard-name">Aura</h3>
+        <p class="pcard-mat">Cream Limestone</p>
+        <p class="pcard-meta">1900 × 900 × 550 mm &nbsp;·&nbsp; ≈ 900 kg</p>
+        <p class="pcard-priceline"><span class="pcard-price">$29,200</span><span class="pcard-ddp"> · duty-paid</span></p>
+        <button class="pcard-buy" onclick="openOrder('Aura')">Order this piece →</button>
+      </div>
+    </div><div class="pcard rv">
+      <div class="pcard-img" style="background-image:url(https://cdn.shopify.com/s/files/1/0798/8602/4945/files/em-d6f6da2ac19ad4e1.jpg)"></div>
+      <div class="pcard-body">
+        <h3 class="pcard-name">Sonoma</h3>
+        <p class="pcard-mat">California Beige Marble</p>
+        <p class="pcard-meta">1800 × 850 × 600 mm &nbsp;·&nbsp; ≈ 800 kg</p>
+        <p class="pcard-priceline"><span class="pcard-price">$27,000</span><span class="pcard-ddp"> · duty-paid</span></p>
+        <button class="pcard-buy" onclick="openOrder('Sonoma')">Order this piece →</button>
+      </div>
+    </div><div class="pcard rv">
+      <div class="pcard-img" style="background-image:url(https://cdn.shopify.com/s/files/1/0798/8602/4945/files/em-4b7180be54eea197.jpg)"></div>
+      <div class="pcard-body">
+        <h3 class="pcard-name">Dune</h3>
+        <p class="pcard-mat">Wood-Grain Sandstone</p>
+        <p class="pcard-meta">1750 × 830 × 660 mm &nbsp;·&nbsp; ≈ 900 kg</p>
+        <p class="pcard-priceline"><span class="pcard-price">$38,300</span><span class="pcard-ddp"> · duty-paid</span></p>
+        <button class="pcard-buy" onclick="openOrder('Dune')">Order this piece →</button>
+      </div>
+    </div><div class="pcard rv">
+      <div class="pcard-img" style="background-image:url(https://cdn.shopify.com/s/files/1/0798/8602/4945/files/em-e1b902fc026a0330.jpg)"></div>
+      <div class="pcard-body">
+        <h3 class="pcard-name">Midas</h3>
+        <p class="pcard-mat">Gold-Vein Marble</p>
+        <p class="pcard-meta">1825 × 855 × 580 mm &nbsp;·&nbsp; ≈ 680 kg</p>
+        <p class="pcard-priceline"><span class="pcard-price">$29,000</span><span class="pcard-ddp"> · duty-paid</span></p>
+        <button class="pcard-buy" onclick="openOrder('Midas')">Order this piece →</button>
+      </div>
+    </div><div class="pcard rv">
+      <div class="pcard-img" style="background-image:url(https://cdn.shopify.com/s/files/1/0798/8602/4945/files/em-1273f2ef97048caf.jpg)"></div>
+      <div class="pcard-body">
+        <h3 class="pcard-name">Empire</h3>
+        <p class="pcard-mat">French Gold-Vein Marble</p>
+        <p class="pcard-meta">1680 × 860 × 550 mm &nbsp;·&nbsp; ≈ 650 kg</p>
+        <p class="pcard-priceline"><span class="pcard-price">$27,500</span><span class="pcard-ddp"> · duty-paid</span></p>
+        <button class="pcard-buy" onclick="openOrder('Empire')">Order this piece →</button>
+      </div>
+    </div><div class="pcard rv">
+      <div class="pcard-img" style="background-image:url(https://cdn.shopify.com/s/files/1/0798/8602/4945/files/em-ae21f52762b8db60.jpg)"></div>
+      <div class="pcard-body">
+        <h3 class="pcard-name">Topaz</h3>
+        <p class="pcard-mat">Gold Marble</p>
+        <p class="pcard-meta">1700 × 850 × 600 mm &nbsp;·&nbsp; ≈ 600 kg</p>
+        <p class="pcard-priceline"><span class="pcard-price">$25,500</span><span class="pcard-ddp"> · duty-paid</span></p>
+        <button class="pcard-buy" onclick="openOrder('Topaz')">Order this piece →</button>
+      </div>
+    </div><div class="pcard rv">
+      <div class="pcard-img" style="background-image:url(https://cdn.shopify.com/s/files/1/0798/8602/4945/files/em-8c8ccc33bb01a75e.jpg)"></div>
+      <div class="pcard-body">
+        <h3 class="pcard-name">Amber</h3>
+        <p class="pcard-mat">Yellow Wood-Grain Marble</p>
+        <p class="pcard-meta">1830 × 860 × 530 mm &nbsp;·&nbsp; ≈ 650 kg</p>
+        <p class="pcard-priceline"><span class="pcard-price">$28,000</span><span class="pcard-ddp"> · duty-paid</span></p>
+        <button class="pcard-buy" onclick="openOrder('Amber')">Order this piece →</button>
+      </div>
+    </div><div class="pcard rv">
+      <div class="pcard-img" style="background-image:url(https://cdn.shopify.com/s/files/1/0798/8602/4945/files/em-976617d1e6b126a4.jpg)"></div>
+      <div class="pcard-body">
+        <h3 class="pcard-name">Dorado</h3>
+        <p class="pcard-mat">Golden Thread Beige</p>
+        <p class="pcard-meta">1700 × 850 × 530 mm &nbsp;·&nbsp; ≈ 620 kg</p>
+        <p class="pcard-priceline"><span class="pcard-price">$26,500</span><span class="pcard-ddp"> · duty-paid</span></p>
+        <button class="pcard-buy" onclick="openOrder('Dorado')">Order this piece →</button>
+      </div>
+    </div><div class="pcard rv">
+      <div class="pcard-img" style="background-image:url(https://cdn.shopify.com/s/files/1/0798/8602/4945/files/em-a26ad05204a90fd1.jpg)"></div>
+      <div class="pcard-body">
+        <h3 class="pcard-name">Sahara</h3>
+        <p class="pcard-mat">Golden Hemp Granite</p>
+        <p class="pcard-meta">1700 × 800 × 550 mm &nbsp;·&nbsp; ≈ 550 kg</p>
+        <p class="pcard-priceline"><span class="pcard-price">$24,000</span><span class="pcard-ddp"> · duty-paid</span></p>
+        <button class="pcard-buy" onclick="openOrder('Sahara')">Order this piece →</button>
+      </div>
+    </div><div class="pcard rv">
+      <div class="pcard-img" style="background-image:url(https://cdn.shopify.com/s/files/1/0798/8602/4945/files/em-25aeb5e88cb66d57.jpg)"></div>
+      <div class="pcard-body">
+        <h3 class="pcard-name">Aureus</h3>
+        <p class="pcard-mat">Golden Granite</p>
+        <p class="pcard-meta">1580 × 1080 × 620 mm &nbsp;·&nbsp; ≈ 700 kg</p>
+        <p class="pcard-priceline"><span class="pcard-price">$31,500</span><span class="pcard-ddp"> · duty-paid</span></p>
+        <button class="pcard-buy" onclick="openOrder('Aureus')">Order this piece →</button>
+      </div>
+    </div><div class="pcard rv">
+      <div class="pcard-img" style="background-image:url(https://cdn.shopify.com/s/files/1/0798/8602/4945/files/em-57dcfcf685388f05.jpg)"></div>
+      <div class="pcard-body">
+        <h3 class="pcard-name">Ivory</h3>
+        <p class="pcard-mat">White Wood-Grain Marble</p>
+        <p class="pcard-meta">1530 × 810 × 500 mm &nbsp;·&nbsp; ≈ 520 kg</p>
+        <p class="pcard-priceline"><span class="pcard-price">$24,000</span><span class="pcard-ddp"> · duty-paid</span></p>
+        <button class="pcard-buy" onclick="openOrder('Ivory')">Order this piece →</button>
+      </div>
+    </div><div class="pcard rv">
+      <div class="pcard-img" style="background-image:url(https://cdn.shopify.com/s/files/1/0798/8602/4945/files/em-551b24cae50ddc97.jpg)"></div>
+      <div class="pcard-body">
+        <h3 class="pcard-name">Aeon</h3>
+        <p class="pcard-mat">Petrified Wood</p>
+        <p class="pcard-meta">2000 × 1000 × 600 mm &nbsp;·&nbsp; ≈ 850 kg</p>
+        <p class="pcard-priceline"><span class="pcard-price">$90,000</span><span class="pcard-ddp"> · duty-paid</span></p>
+        <button class="pcard-buy" onclick="openOrder('Aeon')">Order this piece →</button>
+      </div>
+    </div><div class="pcard rv">
+      <div class="pcard-img" style="background-image:url(https://cdn.shopify.com/s/files/1/0798/8602/4945/files/em-5f04a56a8311c20a.jpg)"></div>
+      <div class="pcard-body">
+        <h3 class="pcard-name">Alba</h3>
+        <p class="pcard-mat">White Onyx</p>
+        <p class="pcard-meta">1850 × 900 × 580 mm &nbsp;·&nbsp; ≈ 950 kg</p>
+        <p class="pcard-priceline"><span class="pcard-price">$40,000</span><span class="pcard-ddp"> · duty-paid</span></p>
+        <button class="pcard-buy" onclick="openOrder('Alba')">Order this piece →</button>
+      </div>
+    </div><div class="pcard rv">
+      <div class="pcard-img" style="background-image:url(https://cdn.shopify.com/s/files/1/0798/8602/4945/files/em-cefc44beb496d53b.jpg)"></div>
+      <div class="pcard-body">
+        <h3 class="pcard-name">Silva</h3>
+        <p class="pcard-mat">Grey Wood-Grain Marble</p>
+        <p class="pcard-meta">2 sizes &nbsp;·&nbsp; ≈ 750 kg</p>
+        <p class="pcard-priceline"><span class="pcard-price">from $25,500</span><span class="pcard-ddp"> · duty-paid</span></p>
+        <button class="pcard-buy" onclick="openOrder('Silva')">Order this piece →</button>
+      </div>
+    </div><div class="pcard rv">
+      <div class="pcard-img" style="background-image:url(https://cdn.shopify.com/s/files/1/0798/8602/4945/files/em-98ef3331ff44aee1.jpg)"></div>
+      <div class="pcard-body">
+        <h3 class="pcard-name">Indigo</h3>
+        <p class="pcard-mat">Palissandro Blue Marble</p>
+        <p class="pcard-meta">1600 × 850 × 550 mm &nbsp;·&nbsp; ≈ 500 kg</p>
+        <p class="pcard-priceline"><span class="pcard-price">$24,000</span><span class="pcard-ddp"> · duty-paid</span></p>
+        <button class="pcard-buy" onclick="openOrder('Indigo')">Order this piece →</button>
+      </div>
+    </div><div class="pcard rv">
+      <div class="pcard-img" style="background-image:url(https://cdn.shopify.com/s/files/1/0798/8602/4945/files/em-ece9f1ff8f70ed60.jpg)"></div>
+      <div class="pcard-body">
+        <h3 class="pcard-name">Nero</h3>
+        <p class="pcard-mat">Nero Marquina Marble</p>
+        <p class="pcard-meta">2 sizes &nbsp;·&nbsp; ≈ 750 kg</p>
+        <p class="pcard-priceline"><span class="pcard-price">$32,400</span><span class="pcard-ddp"> · duty-paid</span></p>
+        <button class="pcard-buy" onclick="openOrder('Nero')">Order this piece →</button>
+      </div>
+    </div><div class="pcard rv">
+      <div class="pcard-img" style="background-image:url(https://cdn.shopify.com/s/files/1/0798/8602/4945/files/em-3f1c0dd174b9b422.jpg)"></div>
+      <div class="pcard-body">
+        <h3 class="pcard-name">Corvus</h3>
+        <p class="pcard-mat">Black Jade</p>
+        <p class="pcard-meta">2 sizes &nbsp;·&nbsp; ≈ 650 kg</p>
+        <p class="pcard-priceline"><span class="pcard-price">from $24,000</span><span class="pcard-ddp"> · duty-paid</span></p>
+        <button class="pcard-buy" onclick="openOrder('Corvus')">Order this piece →</button>
+      </div>
+    </div><div class="pcard rv">
+      <div class="pcard-img" style="background-image:url(https://cdn.shopify.com/s/files/1/0798/8602/4945/files/em-a0a1b226fe16b131.jpg)"></div>
+      <div class="pcard-body">
+        <h3 class="pcard-name">Nocturne</h3>
+        <p class="pcard-mat">Black Forest Marble</p>
+        <p class="pcard-meta">1690 × 790 × 520 mm &nbsp;·&nbsp; ≈ 580 kg</p>
+        <p class="pcard-priceline"><span class="pcard-price">$27,500</span><span class="pcard-ddp"> · duty-paid</span></p>
+        <button class="pcard-buy" onclick="openOrder('Nocturne')">Order this piece →</button>
+      </div>
+    </div><div class="pcard rv">
+      <div class="pcard-img" style="background-image:url(https://cdn.shopify.com/s/files/1/0798/8602/4945/files/em-23ab1c227eec02f4.jpg)"></div>
+      <div class="pcard-body">
+        <h3 class="pcard-name">Verde</h3>
+        <p class="pcard-mat">Verde Alpi Green Marble</p>
+        <p class="pcard-meta">3 sizes &nbsp;·&nbsp; ≈ 850 kg</p>
+        <p class="pcard-priceline"><span class="pcard-price">from $38,900</span><span class="pcard-ddp"> · duty-paid</span></p>
+        <button class="pcard-buy" onclick="openOrder('Verde')">Order this piece →</button>
+      </div>
+    </div><div class="pcard rv">
+      <div class="pcard-img" style="background-image:url(https://cdn.shopify.com/s/files/1/0798/8602/4945/files/em-1145e2772391b8a4.jpg)"></div>
+      <div class="pcard-body">
+        <h3 class="pcard-name">Imperial</h3>
+        <p class="pcard-mat">Emerald Green Marble</p>
+        <p class="pcard-meta">1690 × 1000 × 650 mm &nbsp;·&nbsp; ≈ 800 kg</p>
+        <p class="pcard-priceline"><span class="pcard-price">$42,500</span><span class="pcard-ddp"> · duty-paid</span></p>
+        <button class="pcard-buy" onclick="openOrder('Imperial')">Order this piece →</button>
+      </div>
+    </div><div class="pcard rv">
+      <div class="pcard-img" style="background-image:url(https://cdn.shopify.com/s/files/1/0798/8602/4945/files/em-b05025749104e8b8.jpg)"></div>
+      <div class="pcard-body">
+        <h3 class="pcard-name">Vulcan</h3>
+        <p class="pcard-mat">Black Basalt</p>
+        <p class="pcard-meta">1850 × 920 × 560 mm &nbsp;·&nbsp; ≈ 900 kg</p>
+        <p class="pcard-priceline"><span class="pcard-price">$28,600</span><span class="pcard-ddp"> · duty-paid</span></p>
+        <button class="pcard-buy" onclick="openOrder('Vulcan')">Order this piece →</button>
+      </div>
+    </div></div>
+</section>
+<section class="pshape" id="shape-slipper">
+  <div class="pshape-hd">
+    <div><p class="pshape-k">Slipper · 4 vessels</p><h2 class="pshape-h">The sweeping form — a rim that lifts at the end.</h2></div>
+  </div>
+  <div class="pgrid"><div class="pcard rv">
+      <div class="pcard-img" style="background-image:url(https://cdn.shopify.com/s/files/1/0798/8602/4945/files/em-ab525b7b9195b331.jpg)"></div>
+      <div class="pcard-body">
+        <h3 class="pcard-name">Selene</h3>
+        <p class="pcard-mat">Volakas White Marble</p>
+        <p class="pcard-meta">2000 × 1010 × 700 mm</p>
+        <p class="pcard-priceline"><span class="pcard-price">$28,500</span><span class="pcard-ddp"> · duty-paid</span></p>
+        <button class="pcard-buy" onclick="openOrder('Selene')">Order this piece →</button>
+      </div>
+    </div><div class="pcard rv">
+      <div class="pcard-img" style="background-image:url(https://cdn.shopify.com/s/files/1/0798/8602/4945/files/em-654c4c7f8103c427.jpg)"></div>
+      <div class="pcard-body">
+        <h3 class="pcard-name">Perla</h3>
+        <p class="pcard-mat">Han White Jade</p>
+        <p class="pcard-meta">1710 × 770 × 550 mm &nbsp;·&nbsp; ≈ 630 kg</p>
+        <p class="pcard-priceline"><span class="pcard-price">$27,500</span><span class="pcard-ddp"> · duty-paid</span></p>
+        <button class="pcard-buy" onclick="openOrder('Perla')">Order this piece →</button>
+      </div>
+    </div><div class="pcard rv">
+      <div class="pcard-img" style="background-image:url(https://cdn.shopify.com/s/files/1/0798/8602/4945/files/em-12a7ae45e90595cf.jpg)"></div>
+      <div class="pcard-body">
+        <h3 class="pcard-name">Rosa</h3>
+        <p class="pcard-mat">Rosa Brasile Marble</p>
+        <p class="pcard-meta">1780 × 850 × 580 mm &nbsp;·&nbsp; ≈ 900 kg</p>
+        <p class="pcard-priceline"><span class="pcard-price">$38,900</span><span class="pcard-ddp"> · duty-paid</span></p>
+        <button class="pcard-buy" onclick="openOrder('Rosa')">Order this piece →</button>
+      </div>
+    </div><div class="pcard rv">
+      <div class="pcard-img" style="background-image:url(https://cdn.shopify.com/s/files/1/0798/8602/4945/files/em-47d024728e65243a.jpg)"></div>
+      <div class="pcard-body">
+        <h3 class="pcard-name">Mojave</h3>
+        <p class="pcard-mat">Desert Flow Gold Marble</p>
+        <p class="pcard-meta">1830 × 830 × 570 mm &nbsp;·&nbsp; ≈ 700 kg</p>
+        <p class="pcard-priceline"><span class="pcard-price">$25,000</span><span class="pcard-ddp"> · duty-paid</span></p>
+        <button class="pcard-buy" onclick="openOrder('Mojave')">Order this piece →</button>
+      </div>
+    </div></div>
+</section>
+<section class="pshape" id="shape-round">
+  <div class="pshape-hd">
+    <div><p class="pshape-k">Round · 2 vessels</p><h2 class="pshape-h">A rare circular commission, turned from one block.</h2></div>
+  </div>
+  <div class="pgrid"><div class="pcard rv">
+      <div class="pcard-img" style="background-image:url(https://cdn.shopify.com/s/files/1/0798/8602/4945/files/em-25aeb5e88cb66d57.jpg)"></div>
+      <div class="pcard-body">
+        <h3 class="pcard-name">Aureus</h3>
+        <p class="pcard-mat">Golden Granite</p>
+        <p class="pcard-meta">1580 × 1080 × 620 mm</p>
+        <p class="pcard-priceline"><span class="pcard-price">$31,500</span><span class="pcard-ddp"> · duty-paid</span></p>
+        <button class="pcard-buy" onclick="openOrder('Aureus')">Order this piece →</button>
+      </div>
+    </div><div class="pcard rv">
+      <div class="pcard-img" style="background-image:url(https://cdn.shopify.com/s/files/1/0798/8602/4945/files/em-e1dddfec331648d4.jpg)"></div>
+      <div class="pcard-body">
+        <h3 class="pcard-name">Atlas</h3>
+        <p class="pcard-mat">China Black Granite</p>
+        <p class="pcard-meta">1180 × 1180 × 300 mm &nbsp;·&nbsp; ≈ 980 kg</p>
+        <p class="pcard-priceline"><span class="pcard-price">$30,200</span><span class="pcard-ddp"> · duty-paid</span></p>
+        <button class="pcard-buy" onclick="openOrder('Atlas')">Order this piece →</button>
+      </div>
+    </div></div>
+</section>
+<section class="pshape" id="shape-sculptural">
+  <div class="pshape-hd">
+    <div><p class="pshape-k">Sculptural · 4 vessels</p><h2 class="pshape-h">Singular character — a raw river boulder, matte black, deep colour.</h2></div>
+  </div>
+  <div class="pgrid"><div class="pcard rv">
+      <div class="pcard-img" style="background-image:url(https://cdn.shopify.com/s/files/1/0798/8602/4945/files/em-8e4958c2dbdae6a2.jpg)"></div>
+      <div class="pcard-body">
+        <h3 class="pcard-name">Erebus</h3>
+        <p class="pcard-mat">Black River Stone</p>
+        <p class="pcard-meta">1700 × 950 × 600 mm &nbsp;·&nbsp; ≈ 900 kg</p>
+        <p class="pcard-priceline"><span class="pcard-price">$46,400</span><span class="pcard-ddp"> · duty-paid</span></p>
+        <button class="pcard-buy" onclick="openOrder('Erebus')">Order this piece →</button>
+      </div>
+    </div><div class="pcard rv">
+      <div class="pcard-img" style="background-image:url(https://cdn.shopify.com/s/files/1/0798/8602/4945/files/em-7bee36879ed285eb.jpg)"></div>
+      <div class="pcard-body">
+        <h3 class="pcard-name">Umbra</h3>
+        <p class="pcard-mat">Black Jade, Matte</p>
+        <p class="pcard-meta">1520 × 860 × 500 mm &nbsp;·&nbsp; ≈ 450 kg</p>
+        <p class="pcard-priceline"><span class="pcard-price">$24,000</span><span class="pcard-ddp"> · duty-paid</span></p>
+        <button class="pcard-buy" onclick="openOrder('Umbra')">Order this piece →</button>
+      </div>
+    </div><div class="pcard rv">
+      <div class="pcard-img" style="background-image:url(https://cdn.shopify.com/s/files/1/0798/8602/4945/files/em-da3b85e1492bffaa.jpg)"></div>
+      <div class="pcard-body">
+        <h3 class="pcard-name">Cinder</h3>
+        <p class="pcard-mat">Castle Grey Stone</p>
+        <p class="pcard-meta">1800 × 850 × 560 mm &nbsp;·&nbsp; ≈ 900 kg</p>
+        <p class="pcard-priceline"><span class="pcard-price">$26,500</span><span class="pcard-ddp"> · duty-paid</span></p>
+        <button class="pcard-buy" onclick="openOrder('Cinder')">Order this piece →</button>
+      </div>
+    </div><div class="pcard rv">
+      <div class="pcard-img" style="background-image:url(https://cdn.shopify.com/s/files/1/0798/8602/4945/files/em-a28a9bc97a9fa253.jpg)"></div>
+      <div class="pcard-body">
+        <h3 class="pcard-name">Rubra</h3>
+        <p class="pcard-mat">Multicolor Red Marble</p>
+        <p class="pcard-meta">1500 × 970 × 610 mm &nbsp;·&nbsp; ≈ 550 kg</p>
+        <p class="pcard-priceline"><span class="pcard-price">$24,000</span><span class="pcard-ddp"> · duty-paid</span></p>
+        <button class="pcard-buy" onclick="openOrder('Rubra')">Order this piece →</button>
+      </div>
+    </div></div>
+</section>
+
+<section class="band"><img src="https://cdn.shopify.com/s/files/1/0798/8602/4945/files/em-3929c79245b208a4.jpg" alt="" data-para="55"><div class="band-scrim"></div><div class="band-txt"><p class="band-line rv">The piece that began the collection.</p><p class="band-sub rv d1">The Monolith · Honey Travertine</p></div></section>
+
+<section class="inround" id="inround">
+  <div class="inround-hd">
+    <p class="inround-k">Every angle</p>
+    <h2 class="inround-h">Seen in the round.</h2>
+    <p class="inround-sub">Each vessel is photographed as a set — side, three-quarter, and from above — on the same studio plinth, in the same light. The complete collection, shot the same way.</p>
+  </div>
+  <div class="tv-row rv"><div class="tv-head"><h3 class="tv-name">Candela</h3><p class="tv-mat">Honey Onyx</p></div><div class="tv-views"><div class="tv-cell"><div class="tv-img" style="background-image:url(https://cdn.shopify.com/s/files/1/0798/8602/4945/files/em-24f9cd3df5170d47.jpg)"></div><span class="tv-lab">side</span></div><div class="tv-cell"><div class="tv-img" style="background-image:url(https://cdn.shopify.com/s/files/1/0798/8602/4945/files/em-1ba1a81fffca10bb.jpg)"></div><span class="tv-lab">angle</span></div><div class="tv-cell"><div class="tv-img" style="background-image:url(https://cdn.shopify.com/s/files/1/0798/8602/4945/files/em-bdb9c91dc59d2979.jpg)"></div><span class="tv-lab">top</span></div></div></div>
+<div class="tv-row rv"><div class="tv-head"><h3 class="tv-name">Aura</h3><p class="tv-mat">Cream Limestone</p></div><div class="tv-views"><div class="tv-cell"><div class="tv-img" style="background-image:url(https://cdn.shopify.com/s/files/1/0798/8602/4945/files/em-f0209e22e31df705.jpg)"></div><span class="tv-lab">side</span></div><div class="tv-cell"><div class="tv-img" style="background-image:url(https://cdn.shopify.com/s/files/1/0798/8602/4945/files/em-2b8a79ac1af9ebc5.jpg)"></div><span class="tv-lab">angle</span></div><div class="tv-cell"><div class="tv-img" style="background-image:url(https://cdn.shopify.com/s/files/1/0798/8602/4945/files/em-def6f0fc10eb7e3c.jpg)"></div><span class="tv-lab">top</span></div></div></div>
+<div class="tv-row rv"><div class="tv-head"><h3 class="tv-name">Dune</h3><p class="tv-mat">Golden Sandstone</p></div><div class="tv-views"><div class="tv-cell"><div class="tv-img" style="background-image:url(https://cdn.shopify.com/s/files/1/0798/8602/4945/files/em-980ca793b5ba95a8.jpg)"></div><span class="tv-lab">side</span></div><div class="tv-cell"><div class="tv-img" style="background-image:url(https://cdn.shopify.com/s/files/1/0798/8602/4945/files/em-f30fce975fb2b51a.jpg)"></div><span class="tv-lab">angle</span></div><div class="tv-cell"><div class="tv-img" style="background-image:url(https://cdn.shopify.com/s/files/1/0798/8602/4945/files/em-38a8f61631a01ea8.jpg)"></div><span class="tv-lab">top</span></div></div></div>
+</section>
+
+<section class="material" id="material">
+  <div class="material-hd">
+    <div>
+      <p class="material-k">Material archive</p>
+      <h2 class="material-h">The fourteen stones, up close.</h2>
+    </div>
+    <p class="material-note">One block each · no two the same</p>
+  </div>
+  <div class="material-row">
+    <div class="mchip"><div class="mchip-sw" style="background-image:url(https://cdn.shopify.com/s/files/1/0798/8602/4945/files/em-55e980b842013b51.jpg)"></div><p class="mchip-name">Monolith</p><p class="mchip-stone">Honey Travertine</p></div><div class="mchip"><div class="mchip-sw" style="background-image:url(https://cdn.shopify.com/s/files/1/0798/8602/4945/files/em-bebe1e428f6e77d7.jpg)"></div><p class="mchip-name">Calacatta</p><p class="mchip-stone">White Marble</p></div><div class="mchip"><div class="mchip-sw" style="background-image:url(https://cdn.shopify.com/s/files/1/0798/8602/4945/files/em-1a8237c3c11bf3e6.jpg)"></div><p class="mchip-name">Candela</p><p class="mchip-stone">Honey Onyx</p></div><div class="mchip"><div class="mchip-sw" style="background-image:url(https://cdn.shopify.com/s/files/1/0798/8602/4945/files/em-808888515ca08695.jpg)"></div><p class="mchip-name">Aura</p><p class="mchip-stone">Cream Limestone</p></div><div class="mchip"><div class="mchip-sw" style="background-image:url(https://cdn.shopify.com/s/files/1/0798/8602/4945/files/em-56728955eb0308e6.jpg)"></div><p class="mchip-name">Dune</p><p class="mchip-stone">Golden Sandstone</p></div><div class="mchip"><div class="mchip-sw" style="background-image:url(https://cdn.shopify.com/s/files/1/0798/8602/4945/files/em-220106a7c3367c7e.jpg)"></div><p class="mchip-name">Rosa</p><p class="mchip-stone">Rosa Marble</p></div><div class="mchip"><div class="mchip-sw" style="background-image:url(https://cdn.shopify.com/s/files/1/0798/8602/4945/files/em-d199c0b0eb858637.jpg)"></div><p class="mchip-name">Verde</p><p class="mchip-stone">Green Marble</p></div><div class="mchip"><div class="mchip-sw" style="background-image:url(https://cdn.shopify.com/s/files/1/0798/8602/4945/files/em-fee1fd5f1f0e0128.jpg)"></div><p class="mchip-name">Imperial</p><p class="mchip-stone">Jade Green Marble</p></div><div class="mchip"><div class="mchip-sw" style="background-image:url(https://cdn.shopify.com/s/files/1/0798/8602/4945/files/em-b9082b1e1216647c.jpg)"></div><p class="mchip-name">Alba</p><p class="mchip-stone">White Onyx</p></div><div class="mchip"><div class="mchip-sw" style="background-image:url(https://cdn.shopify.com/s/files/1/0798/8602/4945/files/em-7c331d2ac3a58197.jpg)"></div><p class="mchip-name">Aeon</p><p class="mchip-stone">Petrified Wood</p></div><div class="mchip"><div class="mchip-sw" style="background-image:url(https://cdn.shopify.com/s/files/1/0798/8602/4945/files/em-2a1295b567adb540.jpg)"></div><p class="mchip-name">Nero</p><p class="mchip-stone">Black Marquina</p></div><div class="mchip"><div class="mchip-sw" style="background-image:url(https://cdn.shopify.com/s/files/1/0798/8602/4945/files/em-5231175fac53713d.jpg)"></div><p class="mchip-name">Atlas</p><p class="mchip-stone">Black Granite</p></div><div class="mchip"><div class="mchip-sw" style="background-image:url(https://cdn.shopify.com/s/files/1/0798/8602/4945/files/em-6ef16c89318a3d24.jpg)"></div><p class="mchip-name">Vulcan</p><p class="mchip-stone">Black Basalt</p></div><div class="mchip"><div class="mchip-sw" style="background-image:url(https://cdn.shopify.com/s/files/1/0798/8602/4945/files/em-cdce2c3050b1ed88.jpg)"></div><p class="mchip-name">Erebus</p><p class="mchip-stone">River Stone</p></div>
+  </div>
+</section>
+
+<section class="make" id="making">
+  <div class="make-img" style="background-image:url(https://cdn.shopify.com/s/files/1/0798/8602/4945/files/em-55e980b842013b51.jpg)"><span class="make-tag">Honey travertine · one block</span></div>
+  <div class="make-body">
+    <p class="make-k rv">03 — The making</p>
+    <h2 class="make-h rv d1">Carved from one block.<br>No seams. No shortcuts.</h2>
+    <p class="make-p rv d2">Every vessel begins as a single quarried block, cut and carved until the grain itself decides where the water gathers. Because the piece is one continuous run of stone, the veining is unbroken — and no two are ever alike. The interior is brought to a mirror; the exterior is left at the finish the stone calls for.</p>
+    <p class="make-p rv d3">Walls are carved to a 60&nbsp;mm standard and labelled to the exact millimetre on the production drawings you approve. Nothing leaves until it has passed its water test, and every commission travels with its measured weights and a chain-of-custody document, from quarry to door.</p>
+    <p class="make-note rv d4">Every commission travels under transit insurance, the sum insured stated in writing on your order.<br>We ship worldwide; within the US, delivered duty-paid to your threshold — nothing payable on arrival.</p>
+  </div>
+</section>
+
+<section class="band"><img src="https://cdn.shopify.com/s/files/1/0798/8602/4945/files/em-65f75c909cd04669.jpg" alt="" data-para="55"><div class="band-scrim"></div><div class="band-txt"><p class="band-line rv">Warm as the desert it came from.</p><p class="band-sub rv d1">Dune · Golden Sandstone</p></div></section>
+
+<section class="curated" id="service">
+  <div class="curated-lede">
+    <p class="curated-k rv">04 — Clientele &amp; service</p>
+    <h2 class="curated-h rv d1">For the home that is built once.</h2>
+    <p class="curated-p rv d2">Atelier Earthmade is not a catalogue. Each vessel is commissioned for a single room — for the architects, collectors and owners making a house they intend to keep. One conversation, one block of stone, one piece that will outlast the room around it.</p>
+  </div>
+  <div class="curated-cols">
+    <div class="cpill rv"><p class="cpill-k">Privately curated</p><h3 class="cpill-t">A craftsman, not a sales desk</h3><p class="cpill-d">You are matched with an account manager who knows the stone. Material, dimensions and finish are chosen for your room alone — one vessel, carved for one home.</p></div>
+    <div class="cpill rv d1"><p class="cpill-k">Worldwide · duty-paid in the US</p><h3 class="cpill-t">Delivered, insured, to your threshold</h3><p class="cpill-d">We ship worldwide. Within the United States the price is all-inclusive: ocean freight, export crating, transit insurance and every import duty settled before the piece ships, delivered by appointment to your ground-floor threshold — nothing to pay on arrival. Outside the US, freight and duty are arranged and quoted for your country.</p></div>
+    <div class="cpill rv d2"><p class="cpill-k">Kept for a lifetime</p><h3 class="cpill-t">An object to be inherited</h3><p class="cpill-d">Stone does not date. Each vessel arrives with its measured weights, a care guide and a chain-of-custody document — the beginning of a piece that will be passed on, not replaced.</p></div>
+  </div>
+  <div class="terms">
+    <div class="term rv"><p class="term-k">The 72-hour window</p><p class="term-d">When you place an order we hold your piece and <b>process the transaction, then confirm every detail with you by email within 72 hours</b> — access, floor loading and the delivery route for your address. Inside that window either of us may cancel, for any reason, with a full refund. Only once it closes is the block bought and cut, and the commission becomes final.</p></div>
+    <div class="term rv d1"><p class="term-k">Transit insurance</p><p class="term-d">Every vessel travels fully insured in transit, with the <b>sum insured stated in writing on your order</b>. The cover runs from the workshop to your threshold, carried in the price — there is nothing for you to arrange.</p></div>
+    <div class="term rv d2"><p class="term-k">If it arrives damaged</p><p class="term-d">Inspect the crate on delivery. If the piece is damaged, <b>refuse the delivery and do not sign for it</b> — that refusal is precisely what allows the insurance claim to proceed. We then remake the piece or refund you in full. A signed acceptance closes that door, so please look first.</p></div>
+  </div>
+</section>
+
+<section class="why" id="why">
+  <div class="why-hd">
+    <p class="why-k rv">Why Earthmade</p>
+    <h2 class="why-h rv d1">Not a marketplace listing.</h2>
+  </div>
+  <div class="why-cols">
+    <div class="why-col why-them rv">
+      <p class="why-lab">A marketplace / Etsy listing</p>
+      <ul>
+        <li>A stock photo of someone else's tub — not the stone you receive.</li>
+        <li>No idea who carved it, or whether it is solid stone at all.</li>
+        <li>No one to call; a message queue, answered whenever.</li>
+        <li>You arrange the freight, the customs and the insurance.</li>
+        <li>If it cracks in transit, that is your problem to chase.</li>
+      </ul>
+    </div>
+    <div class="why-col why-us rv d1">
+      <p class="why-lab">Atelier Earthmade</p>
+      <ul>
+        <li>Your own block of natural stone, carved to order for one room.</li>
+        <li>A named account manager who knows your piece, start to finish.</li>
+        <li>Photographs of the real blocks to choose from before you commit.</li>
+        <li>Delivered duty-paid, fully insured, door to door — worldwide.</li>
+        <li>Refuse-on-damage guarantee: we remake it or refund you in full.</li>
+        <li>White-glove unboxing &amp; placement, on request.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="timeline" id="timeline">
+  <div class="tl-hd">
+    <p class="tl-k rv">The commission</p>
+    <h2 class="tl-h rv d1">From first message to your threshold.</h2>
+    <p class="tl-sub rv d2">One dedicated account manager, the whole way through — no queue, no hand-offs. Here is exactly how it goes.</p>
+  </div>
+  <div class="tl-steps">
+    <div class="tl-step rv"><span class="tl-n">01</span><p class="tl-when">Within 24 hours</p><h3 class="tl-t">A person, not a queue</h3><p class="tl-d">You are matched with a dedicated account manager who knows the stone — the same person from first message to delivery. We reply within 24 hours, every time.</p></div>
+    <div class="tl-step rv d1"><span class="tl-n">02</span><p class="tl-when">The 72-hour window</p><h3 class="tl-t">Choose your stone</h3><p class="tl-d">We send you photographs of the actual blocks and guide you through material, finish and dimensions for your room. The transaction is processed and confirmed by email — and either of us may cancel for a full refund until the window closes.</p></div>
+    <div class="tl-step rv d2"><span class="tl-n">03</span><p class="tl-when">14–22 weeks</p><h3 class="tl-t">Carved, and kept in view</h3><p class="tl-d">Your block is cut and carved by hand. Your manager follows up with photographs at each phase — rough, refined, then the polished interior — so you watch it become yours.</p></div>
+    <div class="tl-step rv"><span class="tl-n">04</span><p class="tl-when">Before it ships</p><h3 class="tl-t">Water-tested &amp; crated</h3><p class="tl-d">Every piece is water-tested, then crated and fully insured. We settle the freight and all US import duty as the importer of record.</p></div>
+    <div class="tl-step rv d1"><span class="tl-n">05</span><p class="tl-when">To your door</p><h3 class="tl-t">Delivered worldwide</h3><p class="tl-d">Delivered by appointment to your threshold — duty-paid within the US, quoted individually elsewhere. A white-glove unboxing and placement is available at extra cost, so it feels like opening something rare.</p></div>
+    <div class="tl-step rv d2"><span class="tl-n">06</span><p class="tl-when">For a lifetime</p><h3 class="tl-t">Cared for, after</h3><p class="tl-d">Your vessel arrives with its measured weights, a care guide and a chain-of-custody document. Your manager stays reachable for the life of the piece.</p></div>
+  </div>
+</section>
+
+<section class="deliv" id="delivery">
+  <div class="deliv-hd">
+    <p class="deliv-k rv">Delivery &amp; installation</p>
+    <h2 class="deliv-h rv d1">How a tonne of stone reaches your bathroom.</h2>
+    <p class="deliv-sub rv d2">A vessel weighs from 300 to over 1,200&nbsp;kg. Moving one is its own craft — and it is ours to solve, not yours. This is exactly how it is done.</p>
+  </div>
+  <div class="deliv-grid">
+    <div class="deliv-c rv"><p class="deliv-n">01</p><h3 class="deliv-t">Access &amp; load survey</h3><p class="deliv-d">Before a block is cut we confirm the route in writing — doorway widths, stair turns, lift dimensions and the floor's load rating. If the structure needs reinforcing beneath the piece, we tell you early, with the exact figures for your engineer.</p></div>
+    <div class="deliv-c rv d1"><p class="deliv-n">02</p><h3 class="deliv-t">Custom crate &amp; sea freight</h3><p class="deliv-d">Each vessel is foamed, braced and sealed inside a bespoke timber crate built to its own weights, then shipped by sea on a dedicated pallet. Transit insurance runs from the workshop, the sum insured stated on your order.</p></div>
+    <div class="deliv-c rv d2"><p class="deliv-n">03</p><h3 class="deliv-t">Rigging the last metres</h3><p class="deliv-d">The hardest part is the final room. Our crew moves the piece on stair-skates and machine dollies — or by crane and window-hoist where a staircase will not take it — planned to your building in advance, never improvised on the day.</p></div>
+    <div class="deliv-c rv"><p class="deliv-n">04</p><h3 class="deliv-t">White-glove placement</h3><p class="deliv-d">At extra cost, a trained team uncrates, carries, sets and levels the vessel exactly where it will live, checks the seal, and removes every scrap of packaging — so the first time you see it, it is simply there.</p></div>
+    <div class="deliv-c rv d1"><p class="deliv-n">05</p><h3 class="deliv-t">Ready for your plumber</h3><p class="deliv-d">Vessels are freestanding; you choose floor- or wall-fed fillers and the waste position. We supply a drain-and-tap template and the exact rough-in drawings, so your plumber pre-sets everything before the piece arrives.</p></div>
+    <div class="deliv-c rv d2"><p class="deliv-n">06</p><h3 class="deliv-t">If anything is wrong</h3><p class="deliv-d">Inspect the crate before you sign. If the piece is damaged you refuse delivery and do not sign — that refusal is precisely what lets us remake it or refund you in full. No argument, no chasing.</p></div>
+  </div>
+</section>
+
+<section class="faq" id="faq">
+  <div class="faq-hd">
+    <p class="faq-k rv">Questions, answered plainly</p>
+    <h2 class="faq-h rv d1">The honest answers.</h2>
+  </div>
+  <div class="faq-list">
+    <div class="faq-item rv"><h3 class="faq-q">Why does it cost this much?</h3><p class="faq-a">You are paying for one block of natural stone, carved by hand over months, then shipped fully insured and duty-paid to your door. The price is the piece, the ocean freight, every customs charge and the guarantee — all of it, settled before it ships. Nothing is added at the border. A cheaper listing is almost always a thinner stone, a resin cast, or a cost passed to you on arrival.</p></div>
+    <div class="faq-item rv"><h3 class="faq-q">How long will it last?</h3><p class="faq-a">Stone outlasts the house around it. Sealed and simply cared for, an Earthmade vessel is an heirloom — the kind of object that is inherited, not replaced. Each one ships with a care guide, and your manager stays reachable for its lifetime.</p></div>
+    <div class="faq-item rv"><h3 class="faq-q">What if it doesn't fit, or arrives damaged?</h3><p class="faq-a">We confirm your dimensions, floor loading and delivery access in writing before a single block is cut — nothing is left to chance. If a piece arrives damaged, you refuse the delivery and do not sign; that refusal is what lets us remake it or refund you in full.</p></div>
+    <div class="faq-item rv"><h3 class="faq-q">Can I see the actual stone first?</h3><p class="faq-a">Yes. During the 72-hour window your account manager sends photographs of the real blocks, so you choose the exact stone — veining and all — before anything is committed. It is the opposite of a stock photo.</p></div>
+    <div class="faq-item rv"><h3 class="faq-q">Can I pay in stages?</h3><p class="faq-a">Yes. Because a piece is carved over 14–22 weeks, payment can be arranged as staged instalments across the build — a deposit to begin, balances at agreed milestones — rather than all at once. Your account manager sets the schedule in writing with your order. This is arranged directly with the atelier, not a third-party credit line.</p></div>
+  </div>
+</section>
+
+<section class="trade" id="trade">
+  <div class="trade-in">
+    <div class="trade-txt">
+      <p class="trade-k rv">Trade &amp; hospitality</p>
+      <h2 class="trade-h rv d1">For the people who specify.</h2>
+      <p class="trade-p rv d2">Interior designers, architects, developers and hoteliers work with Atelier Earthmade on trade terms. One point of contact, technical drawings and CAD blocks for specification, physical stone samples for client presentations, and project pricing across multiple rooms or keys. Your client sees the vessel; you hold the relationship.</p>
+      <ul class="trade-l rv d2">
+        <li>Trade pricing &amp; project terms, quoted per specification</li>
+        <li>CAD blocks, rough-in drawings and measured weights for your set</li>
+        <li>Physical stone samples couriered for client presentations</li>
+        <li>A dedicated trade account manager, from spec to installed</li>
+      </ul>
+    </div>
+    <div class="trade-cta rv d2">
+      <button class="trade-b" onclick="openTrade()">Open a trade account →</button>
+      <p class="trade-note">Designers · architects · developers · hospitality.<br>Trade &amp; press enquiries: trade@atelierearthmade.com</p>
+    </div>
+  </div>
+</section>
+
+<section class="commission" id="commission">
+  <div class="commission-in">
+    <h2 class="commission-h rv">Begin a commission</h2>
+    <p class="commission-sub rv d1">Three fields. One conversation. We reply within 24 hours — a dedicated account manager who stays with you the whole way, not a sales desk.</p>
+    <div class="fg rv d2">
+      <div><label class="fl" for="cn">Your name</label><input class="fi" id="cn" type="text" autocomplete="name"></div>
+      <div><label class="fl" for="cp">The piece you have in mind</label><input class="fi" id="cp" type="text" placeholder="e.g. Candela, or describe a material"></div>
+      <div><label class="fl" for="cb">One sentence about your project</label><textarea class="ft" id="cb"></textarea></div>
+      <button class="fsub" onclick="handleForm(event)">Send enquiry</button>
+      <p class="fnote">We reply within 24 hours to atelier@atelierearthmade.com<br>Made to order · 14–22 weeks · shipped worldwide · duty-paid within the United States</p>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-in">
+    <div>
+      <p class="footer-brand"><em>Atelier</em> Earthmade</p>
+      <p class="footer-tag">Stone bathing vessels.<br>Made to order. One block each.<br>Shipped worldwide, insured.</p>
+    </div>
+    <div><p class="footer-ct">Collection</p><div class="footer-l"><a href="#collection">The Monolith</a><a href="#collection">Candela</a><a href="#collection">Calacatta</a><a href="#collection">The full collection →</a></div></div>
+    <div><p class="footer-ct">Studio</p><div class="footer-l"><a href="#making">The making</a><a href="#delivery">Delivery &amp; install</a><a href="#timeline">The process</a><a href="#trade">Trade &amp; hospitality</a><a href="#commission">Commission</a></div></div>
+    <div><p class="footer-ct">Contact</p><div class="footer-c"><a href="#">atelier@atelierearthmade.com</a><a href="#">trade@atelierearthmade.com</a><a href="#">atelierearthmade.com</a><a href="#">@atelier.earthmade</a></div></div>
+  </div>
+  <div class="footer-btm">
+    <p class="footer-cp">© 2026 Atelier Earthmade — Sapiens Holding Inc.</p>
+    <p class="footer-cp">Shipped worldwide · duty-paid within the United States</p>
+  </div>
+</footer>
+
+<div class="mbg" id="mbg" onclick="closeBg(event)">
+  <div class="mbox">
+    <button class="mclose" onclick="closeModal()">✕</button>
+    <div id="mform">
+      <p class="mk" id="mk">Commission enquiry</p>
+      <h3 class="mh" id="mph">Begin a commission</h3>
+      <p class="msub" id="msub">We reply within 24 hours. Nothing is automated from here.</p>
+      <div class="mf">
+        <div><label class="mfl" for="m-name">Your name</label><input class="mfi" id="m-name" type="text" autocomplete="name"></div>
+        <div><label class="mfl" for="m-email">Your email</label><input class="mfi" id="m-email" type="email" autocomplete="email"></div>
+        <div><label class="mfl" for="m-brief">One sentence about your project</label><textarea class="mft" id="m-brief"></textarea></div>
+        <button class="msub-b" id="msubmit" onclick="submitModal()">Send enquiry</button>
+        <p class="mprom" id="mprom">Made to order · price includes US duty · we reply within 24 hours</p>
+      </div>
+    </div>
+    <div class="msuc" id="msuc">
+      <p class="msuc-m">✦</p>
+      <h3 class="msuc-h" id="msuch">Enquiry received.</h3>
+      <p class="msuc-p" id="msucp">We'll reply within 24 hours to the email you provided. Nothing is automated from here.</p>
+    </div>
+  </div>
+</div>
