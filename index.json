@@ -1,0 +1,11 @@
+{
+  "layout": "atelier",
+  "sections": {
+    "main": {
+      "type": "atelier-home"
+    }
+  },
+  "order": [
+    "main"
+  ]
+}
