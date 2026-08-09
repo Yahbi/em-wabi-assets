@@ -382,3 +382,5 @@ body::before{content:'';position:fixed;inset:0;pointer-events:none;z-index:9999;
   .hero-media,.feat-media{animation:none;transform:none;}
   .hero-eyebrow,.hero-h1,.hero-row,.hero-scroll{animation:none;opacity:1;}
 }
+
+a.pcard-buy{text-decoration:none;background:transparent;}
