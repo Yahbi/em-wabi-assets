@@ -1,12 +1,3 @@
-/*
- * ------------------------------------------------------------
- * IMPORTANT: The contents of this file are auto-generated.
- *
- * This file may be updated by the Shopify admin theme editor
- * or related systems. Please exercise caution as any changes
- * made to this file may be overwritten.
- * ------------------------------------------------------------
- */
 {
   "sections": {
     "main": {
@@ -222,7 +213,7 @@
               "type": "text",
               "name": "t:names.text",
               "settings": {
-                "text": "<p><a href=\"/pages/contact\" class=\"button\">Request a quote →</a></p>",
+                "text": "<p><a href=\"/pages/contact\" class=\"button\">Request a quote \u2192</a></p>",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "left",
@@ -247,7 +238,7 @@
               "type": "text",
               "name": "t:names.text",
               "settings": {
-                "text": "<p>Made to order. After you approve your quote, either of us may cancel within 72 hours for any reason — after that your block is committed and the commission is final. <a href=\"/policies/terms-of-service\">Terms of sale</a> · <a href=\"/policies/shipping-policy\">Shipping</a></p>",
+                "text": "<p>Made to order. After you approve your quote, either of us may cancel within 72 hours for any reason \u2014 after that your block is committed and the commission is final. <a href=\"/policies/terms-of-service\">Terms of sale</a> \u00b7 <a href=\"/policies/shipping-policy\">Shipping</a></p>",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "left",
