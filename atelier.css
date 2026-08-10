@@ -384,3 +384,12 @@ body::before{content:'';position:fixed;inset:0;pointer-events:none;z-index:9999;
 }
 
 a.pcard-buy{text-decoration:none;background:transparent;}
+
+/* MOBILE NAV FIX — keep the Commission CTA fully on-screen at ≤600px */
+@media (max-width:600px){
+  .nav{padding:0 16px;height:60px;}
+  .nav-inner{gap:10px;}
+  .nav-logo{font-size:15px;}
+  .nav-links{gap:0;}
+  .nav-cta{padding:7px 13px;font-size:10px;letter-spacing:.12em;white-space:nowrap;flex:0 0 auto;}
+}
